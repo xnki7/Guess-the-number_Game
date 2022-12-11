@@ -27,6 +27,7 @@ document.querySelector('.check').addEventListener('click', function () {
         --score;
         }
     if(score == 0){
+        document.querySelector('body').style.backgroundColor = '#FF0000';
         document.querySelector('.message').textContent = '💀 You Lost!';
     }
     document.querySelector('.score').textContent = score;
@@ -36,6 +37,7 @@ document.querySelector('.check').addEventListener('click', function () {
     --score;
     }
     if(score == 0){
+        document.querySelector('body').style.backgroundColor = '#FF0000';
         document.querySelector('.message').textContent = '💀 You Lost!';
     }
     document.querySelector('.score').textContent = score;
