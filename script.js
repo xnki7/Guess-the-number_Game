@@ -17,7 +17,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
     document.querySelector('.score').textContent = score;
-    if(score > highscore){
+    if(score > document.querySelector('.highscore').textContent){
         document.querySelector('.highscore').textContent = score;
 
     }
